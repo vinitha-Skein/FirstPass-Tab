@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B4A8AE5264A502900232FAA /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A8AE4264A502900232FAA /* SideMenuView.swift */; };
+		1B4A8AEA264A503B00232FAA /* SideMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B4A8AE9264A503B00232FAA /* SideMenuView.xib */; };
+		1B4A8AF0264A562C00232FAA /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A8AEF264A562C00232FAA /* UIView+Extensions.swift */; };
+		1B4A8AF6264A580100232FAA /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4A8AF5264A580100232FAA /* Dashboard.storyboard */; };
+		1B4A8AFE264A5C6B00232FAA /* AppDelegate+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A8AFD264A5C6B00232FAA /* AppDelegate+Window.swift */; };
+		1B4A8B03264A5CE300232FAA /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A8B02264A5CE300232FAA /* DashboardViewController.swift */; };
+		1B4A8B0B264A996B00232FAA /* DashboardMenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A8B0A264A996B00232FAA /* DashboardMenuCVC.swift */; };
+		1B4A8B10264A9BE500232FAA /* dashboardServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A8B0F264A9BE500232FAA /* dashboardServicesModel.swift */; };
+		1B4A8B19264ABA4200232FAA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A8B18264ABA4200232FAA /* UIColor+Extension.swift */; };
+		1B4A8B2A264AC29800232FAA /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A8B27264AC29700232FAA /* ReportViewController.swift */; };
+		1B4A8B2B264AC29800232FAA /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A8B28264AC29700232FAA /* ReportTableViewCell.swift */; };
+		1B4A8B2C264AC29800232FAA /* SosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A8B29264AC29800232FAA /* SosViewController.swift */; };
+		A70479FA264503FA0002DB21 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70479F6264503FA0002DB21 /* ImagePicker.swift */; };
+		A70479FB264503FA0002DB21 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70479F7264503FA0002DB21 /* ImageCache.swift */; };
+		A70479FC264503FA0002DB21 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70479F8264503FA0002DB21 /* CustomImageView.swift */; };
+		A70479FD264503FA0002DB21 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70479F9264503FA0002DB21 /* ImageManager.swift */; };
+		A71237D226429D9500F8775A /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71237D126429D9500F8775A /* MenuCollectionViewCell.swift */; };
+		A71237E32642B1D400F8775A /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71237E22642B1D400F8775A /* PopupViewController.swift */; };
+		A7788AE92646781500B9C508 /* MyOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7788AE82646781500B9C508 /* MyOrdersViewController.swift */; };
+		A7788AEE2646783200B9C508 /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7788AED2646783200B9C508 /* OrdersTableViewCell.swift */; };
+		A77E17A22643B02F001A0A43 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77E17A12643B02F001A0A43 /* ProfileViewController.swift */; };
+		A79021E32642D0EC00BC7943 /* NewGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79021E22642D0EC00BC7943 /* NewGoalViewController.swift */; };
+		A7AD33592642787600FDF5EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD33582642787600FDF5EE /* AppDelegate.swift */; };
+		A7AD335D2642787600FDF5EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD335C2642787600FDF5EE /* ViewController.swift */; };
+		A7AD33602642787600FDF5EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AD335E2642787600FDF5EE /* Main.storyboard */; };
+		A7AD33622642788300FDF5EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AD33612642788300FDF5EE /* Assets.xcassets */; };
+		A7AD33652642788300FDF5EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AD33632642788300FDF5EE /* LaunchScreen.storyboard */; };
+		A7AD33702642788300FDF5EE /* Firstpass_IpadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD336F2642788300FDF5EE /* Firstpass_IpadTests.swift */; };
+		A7AD337B2642788300FDF5EE /* Firstpass_IpadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD337A2642788300FDF5EE /* Firstpass_IpadUITests.swift */; };
+		A7D41AA72649000B00619C7E /* VideoCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D41AA62649000B00619C7E /* VideoCallViewController.swift */; };
+		A7D41AAC2649004F00619C7E /* VideoCallRequestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D41AAB2649004F00619C7E /* VideoCallRequestCollectionViewCell.swift */; };
+		A7D41AB126490B4100619C7E /* VideoPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D41AB026490B4100619C7E /* VideoPopupViewController.swift */; };
+		A7D41ABB26491C5400619C7E /* VideoPopupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D41ABA26491C5400619C7E /* VideoPopupTableViewCell.swift */; };
+		A7F6DBDB2646AFA300BBC9F2 /* MyrequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6DBDA2646AFA300BBC9F2 /* MyrequestsViewController.swift */; };
+		A7F6DBE02646AFEA00BBC9F2 /* MyRequestsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6DBDF2646AFEA00BBC9F2 /* MyRequestsTableViewCell.swift */; };
+		A7FFA388264416F900E55372 /* FamilyMembersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFA387264416F900E55372 /* FamilyMembersTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7AD336C2642788300FDF5EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7AD334D2642787600FDF5EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7AD33542642787600FDF5EE;
+			remoteInfo = "Firstpass Ipad";
+		};
+		A7AD33772642788300FDF5EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7AD334D2642787600FDF5EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7AD33542642787600FDF5EE;
+			remoteInfo = "Firstpass Ipad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B4A8AE4264A502900232FAA /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		1B4A8AE9264A503B00232FAA /* SideMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuView.xib; sourceTree = "<group>"; };
+		1B4A8AEF264A562C00232FAA /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		1B4A8AF5264A580100232FAA /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		1B4A8AFD264A5C6B00232FAA /* AppDelegate+Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Window.swift"; sourceTree = "<group>"; };
+		1B4A8B02264A5CE300232FAA /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		1B4A8B0A264A996B00232FAA /* DashboardMenuCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardMenuCVC.swift; sourceTree = "<group>"; };
+		1B4A8B0F264A9BE500232FAA /* dashboardServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardServicesModel.swift; sourceTree = "<group>"; };
+		1B4A8B18264ABA4200232FAA /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1B4A8B27264AC29700232FAA /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		1B4A8B28264AC29700232FAA /* ReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
+		1B4A8B29264AC29800232FAA /* SosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SosViewController.swift; sourceTree = "<group>"; };
+		A70479F6264503FA0002DB21 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A70479F7264503FA0002DB21 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		A70479F8264503FA0002DB21 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		A70479F9264503FA0002DB21 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		A71237D126429D9500F8775A /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		A71237E22642B1D400F8775A /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		A7788AE82646781500B9C508 /* MyOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersViewController.swift; sourceTree = "<group>"; };
+		A7788AED2646783200B9C508 /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
+		A77E17A12643B02F001A0A43 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A79021E22642D0EC00BC7943 /* NewGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalViewController.swift; sourceTree = "<group>"; };
+		A7AD33552642787600FDF5EE /* Firstpass Ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firstpass Ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7AD33582642787600FDF5EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7AD335C2642787600FDF5EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7AD335F2642787600FDF5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7AD33612642788300FDF5EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7AD33642642788300FDF5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7AD33662642788300FDF5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AD336B2642788300FDF5EE /* Firstpass IpadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Firstpass IpadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7AD336F2642788300FDF5EE /* Firstpass_IpadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firstpass_IpadTests.swift; sourceTree = "<group>"; };
+		A7AD33712642788300FDF5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AD33762642788300FDF5EE /* Firstpass IpadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Firstpass IpadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7AD337A2642788300FDF5EE /* Firstpass_IpadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firstpass_IpadUITests.swift; sourceTree = "<group>"; };
+		A7AD337C2642788300FDF5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D41AA62649000B00619C7E /* VideoCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallViewController.swift; sourceTree = "<group>"; };
+		A7D41AAB2649004F00619C7E /* VideoCallRequestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallRequestCollectionViewCell.swift; sourceTree = "<group>"; };
+		A7D41AB026490B4100619C7E /* VideoPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPopupViewController.swift; sourceTree = "<group>"; };
+		A7D41ABA26491C5400619C7E /* VideoPopupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPopupTableViewCell.swift; sourceTree = "<group>"; };
+		A7F6DBDA2646AFA300BBC9F2 /* MyrequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyrequestsViewController.swift; sourceTree = "<group>"; };
+		A7F6DBDF2646AFEA00BBC9F2 /* MyRequestsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequestsTableViewCell.swift; sourceTree = "<group>"; };
+		A7FFA387264416F900E55372 /* FamilyMembersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMembersTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7AD33522642787600FDF5EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AD33682642788300FDF5EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AD33732642788300FDF5EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B4A8AD8264A3B9E00232FAA /* Menu View */ = {
+			isa = PBXGroup;
+			children = (
+				1B4A8AE4264A502900232FAA /* SideMenuView.swift */,
+				1B4A8AE9264A503B00232FAA /* SideMenuView.xib */,
+			);
+			path = "Menu View";
+			sourceTree = "<group>";
+		};
+		1B4A8AEE264A55EB00232FAA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1B4A8AEF264A562C00232FAA /* UIView+Extensions.swift */,
+				1B4A8B18264ABA4200232FAA /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B4A8AF4264A57E300232FAA /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				1B4A8B02264A5CE300232FAA /* DashboardViewController.swift */,
+				1B4A8AF5264A580100232FAA /* Dashboard.storyboard */,
+				1B4A8B0A264A996B00232FAA /* DashboardMenuCVC.swift */,
+				1B4A8B0F264A9BE500232FAA /* dashboardServicesModel.swift */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		1B4A8B14264A9C4F00232FAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1B4A8B23264AC23000232FAA /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				1B4A8B28264AC29700232FAA /* ReportTableViewCell.swift */,
+				1B4A8B27264AC29700232FAA /* ReportViewController.swift */,
+				1B4A8B29264AC29800232FAA /* SosViewController.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		A70479F52645033F0002DB21 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A70479F8264503FA0002DB21 /* CustomImageView.swift */,
+				A70479F7264503FA0002DB21 /* ImageCache.swift */,
+				A70479F9264503FA0002DB21 /* ImageManager.swift */,
+				A70479F6264503FA0002DB21 /* ImagePicker.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A71237D62642B05C00F8775A /* ExtraGoals */ = {
+			isa = PBXGroup;
+			children = (
+				A71237E22642B1D400F8775A /* PopupViewController.swift */,
+				A71237D126429D9500F8775A /* MenuCollectionViewCell.swift */,
+				A79021E22642D0EC00BC7943 /* NewGoalViewController.swift */,
+			);
+			path = ExtraGoals;
+			sourceTree = "<group>";
+		};
+		A7788AE7264677E200B9C508 /* Myorders */ = {
+			isa = PBXGroup;
+			children = (
+				A7788AE82646781500B9C508 /* MyOrdersViewController.swift */,
+				A7788AED2646783200B9C508 /* OrdersTableViewCell.swift */,
+			);
+			path = Myorders;
+			sourceTree = "<group>";
+		};
+		A77E179D2643AEAC001A0A43 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A77E17A12643B02F001A0A43 /* ProfileViewController.swift */,
+				A7FFA387264416F900E55372 /* FamilyMembersTableViewCell.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A7AD334C2642787600FDF5EE = {
+			isa = PBXGroup;
+			children = (
+				A7AD33572642787600FDF5EE /* Firstpass Ipad */,
+				A7AD336E2642788300FDF5EE /* Firstpass IpadTests */,
+				A7AD33792642788300FDF5EE /* Firstpass IpadUITests */,
+				A7AD33562642787600FDF5EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7AD33562642787600FDF5EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7AD33552642787600FDF5EE /* Firstpass Ipad.app */,
+				A7AD336B2642788300FDF5EE /* Firstpass IpadTests.xctest */,
+				A7AD33762642788300FDF5EE /* Firstpass IpadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7AD33572642787600FDF5EE /* Firstpass Ipad */ = {
+			isa = PBXGroup;
+			children = (
+				1B4A8B23264AC23000232FAA /* Reports */,
+				1B4A8B14264A9C4F00232FAA /* Resources */,
+				1B4A8AF4264A57E300232FAA /* DashBoard */,
+				1B4A8AEE264A55EB00232FAA /* Extensions */,
+				1B4A8AD8264A3B9E00232FAA /* Menu View */,
+				A7D41AA52648FF6C00619C7E /* Video Conference */,
+				A7F6DBD92646AF7C00BBC9F2 /* MyRequests */,
+				A7788AE7264677E200B9C508 /* Myorders */,
+				A70479F52645033F0002DB21 /* Utilities */,
+				A77E179D2643AEAC001A0A43 /* Profile */,
+				A71237D62642B05C00F8775A /* ExtraGoals */,
+				A7AD33582642787600FDF5EE /* AppDelegate.swift */,
+				1B4A8AFD264A5C6B00232FAA /* AppDelegate+Window.swift */,
+				A7AD335C2642787600FDF5EE /* ViewController.swift */,
+				A7AD335E2642787600FDF5EE /* Main.storyboard */,
+				A7AD33612642788300FDF5EE /* Assets.xcassets */,
+				A7AD33632642788300FDF5EE /* LaunchScreen.storyboard */,
+				A7AD33662642788300FDF5EE /* Info.plist */,
+			);
+			path = "Firstpass Ipad";
+			sourceTree = "<group>";
+		};
+		A7AD336E2642788300FDF5EE /* Firstpass IpadTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7AD336F2642788300FDF5EE /* Firstpass_IpadTests.swift */,
+				A7AD33712642788300FDF5EE /* Info.plist */,
+			);
+			path = "Firstpass IpadTests";
+			sourceTree = "<group>";
+		};
+		A7AD33792642788300FDF5EE /* Firstpass IpadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7AD337A2642788300FDF5EE /* Firstpass_IpadUITests.swift */,
+				A7AD337C2642788300FDF5EE /* Info.plist */,
+			);
+			path = "Firstpass IpadUITests";
+			sourceTree = "<group>";
+		};
+		A7D41AA52648FF6C00619C7E /* Video Conference */ = {
+			isa = PBXGroup;
+			children = (
+				A7D41AA62649000B00619C7E /* VideoCallViewController.swift */,
+				A7D41AAB2649004F00619C7E /* VideoCallRequestCollectionViewCell.swift */,
+				A7D41AB026490B4100619C7E /* VideoPopupViewController.swift */,
+				A7D41ABA26491C5400619C7E /* VideoPopupTableViewCell.swift */,
+			);
+			path = "Video Conference";
+			sourceTree = "<group>";
+		};
+		A7F6DBD92646AF7C00BBC9F2 /* MyRequests */ = {
+			isa = PBXGroup;
+			children = (
+				A7F6DBDA2646AFA300BBC9F2 /* MyrequestsViewController.swift */,
+				A7F6DBDF2646AFEA00BBC9F2 /* MyRequestsTableViewCell.swift */,
+			);
+			path = MyRequests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7AD33542642787600FDF5EE /* Firstpass Ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7AD337F2642788300FDF5EE /* Build configuration list for PBXNativeTarget "Firstpass Ipad" */;
+			buildPhases = (
+				A7AD33512642787600FDF5EE /* Sources */,
+				A7AD33522642787600FDF5EE /* Frameworks */,
+				A7AD33532642787600FDF5EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Firstpass Ipad";
+			productName = "Firstpass Ipad";
+			productReference = A7AD33552642787600FDF5EE /* Firstpass Ipad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7AD336A2642788300FDF5EE /* Firstpass IpadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7AD33822642788300FDF5EE /* Build configuration list for PBXNativeTarget "Firstpass IpadTests" */;
+			buildPhases = (
+				A7AD33672642788300FDF5EE /* Sources */,
+				A7AD33682642788300FDF5EE /* Frameworks */,
+				A7AD33692642788300FDF5EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7AD336D2642788300FDF5EE /* PBXTargetDependency */,
+			);
+			name = "Firstpass IpadTests";
+			productName = "Firstpass IpadTests";
+			productReference = A7AD336B2642788300FDF5EE /* Firstpass IpadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7AD33752642788300FDF5EE /* Firstpass IpadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7AD33852642788300FDF5EE /* Build configuration list for PBXNativeTarget "Firstpass IpadUITests" */;
+			buildPhases = (
+				A7AD33722642788300FDF5EE /* Sources */,
+				A7AD33732642788300FDF5EE /* Frameworks */,
+				A7AD33742642788300FDF5EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7AD33782642788300FDF5EE /* PBXTargetDependency */,
+			);
+			name = "Firstpass IpadUITests";
+			productName = "Firstpass IpadUITests";
+			productReference = A7AD33762642788300FDF5EE /* Firstpass IpadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7AD334D2642787600FDF5EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					A7AD33542642787600FDF5EE = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					A7AD336A2642788300FDF5EE = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A7AD33542642787600FDF5EE;
+					};
+					A7AD33752642788300FDF5EE = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A7AD33542642787600FDF5EE;
+					};
+				};
+			};
+			buildConfigurationList = A7AD33502642787600FDF5EE /* Build configuration list for PBXProject "Firstpass Ipad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7AD334C2642787600FDF5EE;
+			productRefGroup = A7AD33562642787600FDF5EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7AD33542642787600FDF5EE /* Firstpass Ipad */,
+				A7AD336A2642788300FDF5EE /* Firstpass IpadTests */,
+				A7AD33752642788300FDF5EE /* Firstpass IpadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7AD33532642787600FDF5EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AD33652642788300FDF5EE /* LaunchScreen.storyboard in Resources */,
+				1B4A8AF6264A580100232FAA /* Dashboard.storyboard in Resources */,
+				A7AD33622642788300FDF5EE /* Assets.xcassets in Resources */,
+				1B4A8AEA264A503B00232FAA /* SideMenuView.xib in Resources */,
+				A7AD33602642787600FDF5EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AD33692642788300FDF5EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AD33742642788300FDF5EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7AD33512642787600FDF5EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70479FB264503FA0002DB21 /* ImageCache.swift in Sources */,
+				1B4A8B03264A5CE300232FAA /* DashboardViewController.swift in Sources */,
+				A79021E32642D0EC00BC7943 /* NewGoalViewController.swift in Sources */,
+				1B4A8AFE264A5C6B00232FAA /* AppDelegate+Window.swift in Sources */,
+				A7788AEE2646783200B9C508 /* OrdersTableViewCell.swift in Sources */,
+				1B4A8B2C264AC29800232FAA /* SosViewController.swift in Sources */,
+				A71237E32642B1D400F8775A /* PopupViewController.swift in Sources */,
+				A70479FD264503FA0002DB21 /* ImageManager.swift in Sources */,
+				A7AD335D2642787600FDF5EE /* ViewController.swift in Sources */,
+				A7D41ABB26491C5400619C7E /* VideoPopupTableViewCell.swift in Sources */,
+				1B4A8B10264A9BE500232FAA /* dashboardServicesModel.swift in Sources */,
+				A70479FA264503FA0002DB21 /* ImagePicker.swift in Sources */,
+				1B4A8B0B264A996B00232FAA /* DashboardMenuCVC.swift in Sources */,
+				A7D41AB126490B4100619C7E /* VideoPopupViewController.swift in Sources */,
+				A7F6DBDB2646AFA300BBC9F2 /* MyrequestsViewController.swift in Sources */,
+				1B4A8B2A264AC29800232FAA /* ReportViewController.swift in Sources */,
+				1B4A8AF0264A562C00232FAA /* UIView+Extensions.swift in Sources */,
+				A7AD33592642787600FDF5EE /* AppDelegate.swift in Sources */,
+				A77E17A22643B02F001A0A43 /* ProfileViewController.swift in Sources */,
+				A70479FC264503FA0002DB21 /* CustomImageView.swift in Sources */,
+				1B4A8B2B264AC29800232FAA /* ReportTableViewCell.swift in Sources */,
+				A7D41AA72649000B00619C7E /* VideoCallViewController.swift in Sources */,
+				A7788AE92646781500B9C508 /* MyOrdersViewController.swift in Sources */,
+				1B4A8AE5264A502900232FAA /* SideMenuView.swift in Sources */,
+				A7D41AAC2649004F00619C7E /* VideoCallRequestCollectionViewCell.swift in Sources */,
+				A7F6DBE02646AFEA00BBC9F2 /* MyRequestsTableViewCell.swift in Sources */,
+				1B4A8B19264ABA4200232FAA /* UIColor+Extension.swift in Sources */,
+				A7FFA388264416F900E55372 /* FamilyMembersTableViewCell.swift in Sources */,
+				A71237D226429D9500F8775A /* MenuCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AD33672642788300FDF5EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AD33702642788300FDF5EE /* Firstpass_IpadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AD33722642788300FDF5EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AD337B2642788300FDF5EE /* Firstpass_IpadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7AD336D2642788300FDF5EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7AD33542642787600FDF5EE /* Firstpass Ipad */;
+			targetProxy = A7AD336C2642788300FDF5EE /* PBXContainerItemProxy */;
+		};
+		A7AD33782642788300FDF5EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7AD33542642787600FDF5EE /* Firstpass Ipad */;
+			targetProxy = A7AD33772642788300FDF5EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7AD335E2642787600FDF5EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7AD335F2642787600FDF5EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7AD33632642788300FDF5EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7AD33642642788300FDF5EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7AD337D2642788300FDF5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7AD337E2642788300FDF5EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7AD33802642788300FDF5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WTAJ34H38D;
+				INFOPLIST_FILE = "Firstpass Ipad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skein.SampleApplication.Firstpass-Ipad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Sipper Development";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7AD33812642788300FDF5EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WTAJ34H38D;
+				INFOPLIST_FILE = "Firstpass Ipad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skein.SampleApplication.Firstpass-Ipad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Sipper Development";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7AD33832642788300FDF5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66AXNRYMA4;
+				INFOPLIST_FILE = "Firstpass IpadTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skein.SampleApplication.Firstpass-IpadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Firstpass Ipad.app/Firstpass Ipad";
+			};
+			name = Debug;
+		};
+		A7AD33842642788300FDF5EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66AXNRYMA4;
+				INFOPLIST_FILE = "Firstpass IpadTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skein.SampleApplication.Firstpass-IpadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Firstpass Ipad.app/Firstpass Ipad";
+			};
+			name = Release;
+		};
+		A7AD33862642788300FDF5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66AXNRYMA4;
+				INFOPLIST_FILE = "Firstpass IpadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skein.SampleApplication.Firstpass-IpadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Firstpass Ipad";
+			};
+			name = Debug;
+		};
+		A7AD33872642788300FDF5EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66AXNRYMA4;
+				INFOPLIST_FILE = "Firstpass IpadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skein.SampleApplication.Firstpass-IpadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Firstpass Ipad";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7AD33502642787600FDF5EE /* Build configuration list for PBXProject "Firstpass Ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AD337D2642788300FDF5EE /* Debug */,
+				A7AD337E2642788300FDF5EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7AD337F2642788300FDF5EE /* Build configuration list for PBXNativeTarget "Firstpass Ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AD33802642788300FDF5EE /* Debug */,
+				A7AD33812642788300FDF5EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7AD33822642788300FDF5EE /* Build configuration list for PBXNativeTarget "Firstpass IpadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AD33832642788300FDF5EE /* Debug */,
+				A7AD33842642788300FDF5EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7AD33852642788300FDF5EE /* Build configuration list for PBXNativeTarget "Firstpass IpadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AD33862642788300FDF5EE /* Debug */,
+				A7AD33872642788300FDF5EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7AD334D2642787600FDF5EE /* Project object */;
+}

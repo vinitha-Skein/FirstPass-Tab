@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuView" customModule="Firstpass_Ipad" customModuleProvider="target">
+            <connections>
+                <outlet property="DashBoardButton" destination="rAr-Ci-dQ3" id="jXV-wE-JTM"/>
+                <outlet property="callButton" destination="D21-xH-2Hc" id="AWU-Iv-I63"/>
+                <outlet property="facilitiesButton" destination="3om-ZZ-EPv" id="ELw-iS-A6L"/>
+                <outlet property="feedbackButon" destination="zPD-od-sqs" id="jy3-d8-Rg3"/>
+                <outlet property="specialServicesButton" destination="F53-5c-1te" id="FH0-XS-Ky0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4R-4c-dgc">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="250"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cgT-dY-0aU">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="250"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAr-Ci-dQ3">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal">
+                                        <imageReference key="image" image="square.grid.2x2" catalog="system" renderingMode="template"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="menuButtonsPressed:" destination="-1" eventType="touchUpInside" id="ODE-Zo-FbL"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D21-xH-2Hc">
+                                    <rect key="frame" x="0.0" y="50" width="100" height="50"/>
+                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="phone.connection" catalog="system"/>
+                                    <connections>
+                                        <action selector="menuButtonsPressed:" destination="-1" eventType="touchUpInside" id="Ogd-LJ-2JO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3om-ZZ-EPv">
+                                    <rect key="frame" x="0.0" y="100" width="100" height="50"/>
+                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="heart" catalog="system"/>
+                                    <connections>
+                                        <action selector="menuButtonsPressed:" destination="-1" eventType="touchUpInside" id="FfS-11-XgQ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPD-od-sqs">
+                                    <rect key="frame" x="0.0" y="150" width="100" height="50"/>
+                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="text.bubble" catalog="system"/>
+                                    <connections>
+                                        <action selector="menuButtonsPressed:" destination="-1" eventType="touchUpInside" id="avL-0e-vnD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F53-5c-1te">
+                                    <rect key="frame" x="0.0" y="200" width="100" height="50"/>
+                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="star.square" catalog="system"/>
+                                    <connections>
+                                        <action selector="menuButtonsPressed:" destination="-1" eventType="touchUpInside" id="sNS-Nb-tpW"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="cgT-dY-0aU" firstAttribute="leading" secondItem="J4R-4c-dgc" secondAttribute="leading" id="6gE-8T-khl"/>
+                        <constraint firstAttribute="bottom" secondItem="cgT-dY-0aU" secondAttribute="bottom" id="SDC-QM-dAf"/>
+                        <constraint firstItem="cgT-dY-0aU" firstAttribute="top" secondItem="J4R-4c-dgc" secondAttribute="top" id="v4h-87-c7Q"/>
+                        <constraint firstAttribute="trailing" secondItem="cgT-dY-0aU" secondAttribute="trailing" id="zxE-ha-UxS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="J4R-4c-dgc" secondAttribute="trailing" id="9jk-e7-9nm"/>
+                <constraint firstItem="J4R-4c-dgc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FbC-7R-6oq"/>
+                <constraint firstAttribute="bottom" secondItem="J4R-4c-dgc" secondAttribute="bottom" id="hmI-vS-JlU"/>
+                <constraint firstItem="J4R-4c-dgc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uLg-Fi-nBU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-92.028985507246389" y="-157.70089285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="phone.connection" catalog="system" width="128" height="116"/>
+        <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
+        <image name="star.square" catalog="system" width="128" height="114"/>
+        <image name="text.bubble" catalog="system" width="128" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
